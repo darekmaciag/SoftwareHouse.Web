@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove=".babelrc.js" />
     <None Remove="Frontend\Homepage\Components\Demo\Demo.tsx" />
     <None Remove="Frontend\Homepage\index.tsx" />
   </ItemGroup>
@@ -35,10 +36,6 @@
     <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="1.0.1" />
     <DotNetCliToolReference Include="Microsoft.Extensions.SecretManager.Tools" Version="1.0.1" />
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include=".babelrc" />
   </ItemGroup>
 
   <ItemGroup>

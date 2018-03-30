@@ -7,8 +7,11 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using SoftwareHouse.Web.Identity.Services.Models;
-using SoftwareHouse.Web.Identity.Services.Models.ManageViewModels;
+using SoftwareHouse.Web.Identity.Models;
+using SoftwareHouse.Web.Identity.Services;
+using SoftwareHouse.Web.Identity.Models.ManageViewModels;
+using SoftwareHouse.Web.Identity.Models.AccountViewModels;
+using SoftwareHouse.Web.Data.Models;
 
 namespace SoftwareHouse.Web.Controllers
 {

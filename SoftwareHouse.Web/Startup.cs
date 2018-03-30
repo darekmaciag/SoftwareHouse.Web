@@ -10,8 +10,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using SoftwareHouse.Web.Data;
-using SoftwareHouse.Web.Identity.Services.Models;
-using SoftwareHouse.Web.Identity.Services.Services;
+using SoftwareHouse.Web.Identity.Services;
+using SoftwareHouse.Web.Identity.Models;
 using SoftwareHouse.Web.Data.Models;
 
 namespace SoftwareHouse.Web
