@@ -9,10 +9,10 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using SoftwareHouse.Web.Data;
+using SoftwareHouse.DataAccess;
 using SoftwareHouse.Web.Identity.Services;
 using SoftwareHouse.Web.Identity.Models;
-using SoftwareHouse.Web.Data.Models;
+using SoftwareHouse.DataAccess.Models;
 using Microsoft.AspNetCore.SpaServices.Webpack;
 
 namespace SoftwareHouse.Web

@@ -4,10 +4,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using SoftwareHouse.Web.Identity.Models;
-using SoftwareHouse.Web.Data.Models;
+using SoftwareHouse.DataAccess;
+using SoftwareHouse.DataAccess.Models;
+using SoftwareHouse.DataAccess.Migrations;
 
-namespace SoftwareHouse.Web.Data.Models
+namespace SoftwareHouse.DataAccess
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
