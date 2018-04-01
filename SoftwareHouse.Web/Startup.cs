@@ -13,6 +13,7 @@ using SoftwareHouse.Web.Data;
 using SoftwareHouse.Web.Identity.Services;
 using SoftwareHouse.Web.Identity.Models;
 using SoftwareHouse.Web.Data.Models;
+using Microsoft.AspNetCore.SpaServices.Webpack;
 
 namespace SoftwareHouse.Web
 {
@@ -63,9 +64,15 @@ namespace SoftwareHouse.Web
 
             if (env.IsDevelopment())
             {
+
                 app.UseDeveloperExceptionPage();
-                app.UseDatabaseErrorPage();
-                app.UseBrowserLink();
+
+                // Add WebpackDevMiddleware:
+                app.UseWebpackDevMiddleware(new WebpackDevMiddlewareOptions
+                {
+                    HotModuleReplacement = true,
+                    ReactHotModuleReplacement = true
+                });
             }
             else
             {
