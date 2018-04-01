@@ -64,15 +64,9 @@ namespace SoftwareHouse.Web
 
             if (env.IsDevelopment())
             {
-
                 app.UseDeveloperExceptionPage();
-
-                // Add WebpackDevMiddleware:
-                app.UseWebpackDevMiddleware(new WebpackDevMiddlewareOptions
-                {
-                    HotModuleReplacement = true,
-                    ReactHotModuleReplacement = true
-                });
+                app.UseDatabaseErrorPage();
+                app.UseBrowserLink();
             }
             else
             {
